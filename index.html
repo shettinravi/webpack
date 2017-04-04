@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html class="layout-bkd" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Chess Club</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="myApp">
+    <!-- Page Content -->
+    <div class="container">
+        <div class="content-area" >
+        	<!-- LANDING PAGE -->
+        	<div class="landingPage">
+            	<div>
+                	<img src="assets/img/ChessClub_Logo_w_address.svg" alt="" class="">
+                	<span class="applyMembership">APPLY FOR MEMBERSHIP</span>    
+				</div>
+            </div>
+            <!-- RESTAURANT NAME PAGE -->
+            <div class="pages pageBg secondPage">
+            	<div class="stickyRestaurantName" >
+                	THE RESTAURANT<br>BY
+                	<div class="restaurantName">JACKSON BOXER</div>
+				</div>                    
+            </div>
+            <!-- RESTAURANT MENU DETAILS PAGE -->
+            <div class="pages pageBg restaurantPage" >
+            	<ul class="restaurantMenu">
+                	<li class="active" rel="#breakfast">BREAKFAST</li>
+                	<li rel="#lunch">LUNCH</li>
+                    <li rel="#dinner">DINNER</li>
+                    <li rel="#barfoodday">BAR FOOD DAY</li>
+                    <li rel="#barfoodnight">BAR FOOD NIGHT</li>
+                </ul>
+            	<div class="restaurantMenuDesc">
+                	<div class="restaurantMenuMobileOuterWrap">
+                        <div class="restaurantMenuMobileWrap">
+                            <ul class="restaurantMenuMobile" id="restaurantMenuMobile">
+                                <li class="active" rel="#breakfast">BREAKFAST</li>
+                                <li rel="#lunch">LUNCH</li>
+                                <li rel="#dinner">DINNER</li>
+                                <li rel="#barfoodday">BAR FOOD DAY</li>
+                                <li rel="#barfoodnight">BAR FOOD NIGHT</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vertical-divider-1 mobile"></div>
+                    <div class="restaurantDetailMobileOuterWrap clearfix">
+                    	<div class="restaurantDetailMobileWrap">
+                            <div id="breakfast" class="setRestaurantMenu">
+                                <h2>BREAKFAST</h2>
+                                <div class="vertical-divider-1"></div>
+                                <p>VEAL TARTARE, CRISPY CAVIAR,<br>
+                                    AROMATIC WINKLES & PICKLED SUNFLOWERS<br>
+                                    Côtes Du Jura – Chevassu Fassenet, Savagnin Ouillé 2011<br> 
+                                    £8.50
+                                </p>
+                                <p>PRESSED DUCK FOIE GRAS, CRAB & PIPERADE BASQUAISE<br>
+                                    Côtes De Provence – Le Duclaux, Ste Victoire 2014<br>
+                                    £6.00
+                                </p>
+                                <p>SEARED MULLET, TOMATO LIQUOR & COURGETTE<br>
+                                    FLOWER “MARINIERE”<br>
+                                    Minervois – Hegarty-Chamans, Chamans Blanc 2010<br>
+                                    £8.00
+                                </p>
+                                <p>BARBECUED WOOD PIGEON, CORN SURPRISE,<br>
+                                    OYSTER & WORCESTERSHIRE<br>
+                                    Madiran – Château de Crouseilles 2001<br>
+                                    £11.50
+                                </p>
+                                <p>CABECOU DE ROCAMADOUR, GOOSEBERRY & TAMARIND<br>
+                                    Jurançon – Camin Larredya, Costat Darrèr 2013<br>
+                                    £7.50
+                                </p>
+                                <p>FROSTED VIOLET AND RASPBERRY, BLACKCURRANT & BEETROOT GEL<br>
+                                    Champagne - Lallier Grand Cru, Brut Rosé<br>
+                                    £11.00
+                                </p>
+                            </div>
+                            <div id="lunch" class="setRestaurantMenu">
+                                <h2>LUNCH</h2>
+                                <div class="vertical-divider-1"></div>
+                                <p>VEAL TARTARE, CRISPY CAVIAR,<br>
+                                    AROMATIC WINKLES & PICKLED SUNFLOWERS<br>
+                                    Côtes Du Jura – Chevassu Fassenet, Savagnin Ouillé 2011<br> 
+                                    £8.50
+                                </p>
+                                <p>PRESSED DUCK FOIE GRAS, CRAB & PIPERADE BASQUAISE<br>
+                                    Côtes De Provence – Le Duclaux, Ste Victoire 2014<br>
+                                    £6.00
+                                </p>
+                                <p>SEARED MULLET, TOMATO LIQUOR & COURGETTE<br>
+                                    FLOWER “MARINIERE”<br>
+                                    Minervois – Hegarty-Chamans, Chamans Blanc 2010<br>
+                                    £8.00
+                                </p>
+                                <p>BARBECUED WOOD PIGEON, CORN SURPRISE,<br>
+                                    OYSTER & WORCESTERSHIRE<br>
+                                    Madiran – Château de Crouseilles 2001<br>
+                                    £11.50
+                                </p>
+                                <p>CABECOU DE ROCAMADOUR, GOOSEBERRY & TAMARIND<br>
+                                    Jurançon – Camin Larredya, Costat Darrèr 2013<br>
+                                    £7.50
+                                </p>
+                                <p>FROSTED VIOLET AND RASPBERRY, BLACKCURRANT & BEETROOT GEL<br>
+                                    Champagne - Lallier Grand Cru, Brut Rosé<br>
+                                    £11.00
+                                </p>
+                            </div>
+                            <div id="dinner" class="setRestaurantMenu">
+                                <h2>DINNER</h2>
+                                <div class="vertical-divider-1"></div>
+                                <p>VEAL TARTARE, CRISPY CAVIAR,<br>
+                                    AROMATIC WINKLES & PICKLED SUNFLOWERS<br>
+                                    Côtes Du Jura – Chevassu Fassenet, Savagnin Ouillé 2011<br> 
+                                    £8.50
+                                </p>
+                                <p>PRESSED DUCK FOIE GRAS, CRAB & PIPERADE BASQUAISE<br>
+                                    Côtes De Provence – Le Duclaux, Ste Victoire 2014<br>
+                                    £6.00
+                                </p>
+                                <p>SEARED MULLET, TOMATO LIQUOR & COURGETTE<br>
+                                    FLOWER “MARINIERE”<br>
+                                    Minervois – Hegarty-Chamans, Chamans Blanc 2010<br>
+                                    £8.00
+                                </p>
+                                <p>BARBECUED WOOD PIGEON, CORN SURPRISE,<br>
+                                    OYSTER & WORCESTERSHIRE<br>
+                                    Madiran – Château de Crouseilles 2001<br>
+                                    £11.50
+                                </p>
+                                <p>CABECOU DE ROCAMADOUR, GOOSEBERRY & TAMARIND<br>
+                                    Jurançon – Camin Larredya, Costat Darrèr 2013<br>
+                                    £7.50
+                                </p>
+                                <p>FROSTED VIOLET AND RASPBERRY, BLACKCURRANT & BEETROOT GEL<br>
+                                    Champagne - Lallier Grand Cru, Brut Rosé<br>
+                                    £11.00
+                                </p>
+                            </div>
+                            <div id="barfoodday" class="setRestaurantMenu">
+                                <h2>BAR FOOD DAY</h2>
+                                <div class="vertical-divider-1"></div>
+                                <p>VEAL TARTARE, CRISPY CAVIAR,<br>
+                                    AROMATIC WINKLES & PICKLED SUNFLOWERS<br>
+                                    Côtes Du Jura – Chevassu Fassenet, Savagnin Ouillé 2011<br> 
+                                    £8.50
+                                </p>
+                                <p>PRESSED DUCK FOIE GRAS, CRAB & PIPERADE BASQUAISE<br>
+                                    Côtes De Provence – Le Duclaux, Ste Victoire 2014<br>
+                                    £6.00
+                                </p>
+                                <p>SEARED MULLET, TOMATO LIQUOR & COURGETTE<br>
+                                    FLOWER “MARINIERE”<br>
+                                    Minervois – Hegarty-Chamans, Chamans Blanc 2010<br>
+                                    £8.00
+                                </p>
+                                <p>BARBECUED WOOD PIGEON, CORN SURPRISE,<br>
+                                    OYSTER & WORCESTERSHIRE<br>
+                                    Madiran – Château de Crouseilles 2001<br>
+                                    £11.50
+                                </p>
+                                <p>CABECOU DE ROCAMADOUR, GOOSEBERRY & TAMARIND<br>
+                                    Jurançon – Camin Larredya, Costat Darrèr 2013<br>
+                                    £7.50
+                                </p>
+                                <p>FROSTED VIOLET AND RASPBERRY, BLACKCURRANT & BEETROOT GEL<br>
+                                    Champagne - Lallier Grand Cru, Brut Rosé<br>
+                                    £11.00
+                                </p>
+                            </div>
+                            <div id="barfoodnight" class="setRestaurantMenu">
+                                <h2>BAR FOOD NIGHT</h2>
+                                <div class="vertical-divider-1"></div>
+                                <p>VEAL TARTARE, CRISPY CAVIAR,<br>
+                                    AROMATIC WINKLES & PICKLED SUNFLOWERS<br>
+                                    Côtes Du Jura – Chevassu Fassenet, Savagnin Ouillé 2011<br> 
+                                    £8.50
+                                </p>
+                                <p>PRESSED DUCK FOIE GRAS, CRAB & PIPERADE BASQUAISE<br>
+                                    Côtes De Provence – Le Duclaux, Ste Victoire 2014<br>
+                                    £6.00
+                                </p>
+                                <p>SEARED MULLET, TOMATO LIQUOR & COURGETTE<br>
+                                    FLOWER “MARINIERE”<br>
+                                    Minervois – Hegarty-Chamans, Chamans Blanc 2010<br>
+                                    £8.00
+                                </p>
+                                <p>BARBECUED WOOD PIGEON, CORN SURPRISE,<br>
+                                    OYSTER & WORCESTERSHIRE<br>
+                                    Madiran – Château de Crouseilles 2001<br>
+                                    £11.50
+                                </p>
+                                <p>CABECOU DE ROCAMADOUR, GOOSEBERRY & TAMARIND<br>
+                                    Jurançon – Camin Larredya, Costat Darrèr 2013<br>
+                                    £7.50
+                                </p>
+                                <p>FROSTED VIOLET AND RASPBERRY, BLACKCURRANT & BEETROOT GEL<br>
+                                    Champagne - Lallier Grand Cru, Brut Rosé<br>
+                                    £11.00
+                                </p>
+                            </div>
+						</div>                            
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FORM TABS -->
+            <div class="tabContainerWrap" >
+                <!-- MEMBER SIGN UP -->
+                <div class="tabWrap light active" id="signupWrap" rel="0">
+                	<div class="tabClose alertMsg" backTab="home" oldId="#signupWrap"></div>
+                    <!--<div class="backBtn"  backTab=".tabContainerWrap" oldId="home"><span></span></div>-->
+                    <h2>sign up</h2>
+                    <div class="vertical-divider-1"></div>
+                    <form  ng-controller="signupForm" name="signupForm" novalidate >
+                        <div class="formWrap">
+                            <div class="formWrapLeft">
+                                <input type="text" name="firstname" ng-model="firstname" placeholder="First Name*" class="txtBox"  required >
+                                <span class="errMsg" ng-show="signupForm.firstname.$touched && signupForm.firstname.$invalid">
+                                <span ng-show="signupForm.firstname.$error.required">First Name is required.</span>
+                                </span>
+                            </div>
+                            <div class="formWrapRight">
+                                <input type="text" name="lastname" ng-model="lastname" placeholder="Last Name*" class="txtBox"  required >
+                                <span  class="errMsg" ng-show="signupForm.lastname.$touched && signupForm.lastname.$invalid">
+                                <span ng-show="signupForm.lastname.$error.required">Last Name is required.</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="formWrap">
+                            <div class="formWrapLeft">
+                                <input type="text" name="preferredname" ng-model="preferredname" placeholder="Preferred Name*" class="txtBox"  required >
+                                <span class="errMsg" ng-show="signupForm.preferredname.$touched && signupForm.preferredname.$invalid">
+                                <span ng-show="signupForm.preferredname.$error.required">Preferred Name is required.</span>
+                                </span>
+                            </div>
+                            <div class="formWrapRight">
+                                <input type="email" name="emailaddress" ng-model="emailaddress" placeholder="Email Address*" class="txtBox"  required >
+                                <span class="errMsg" ng-show="signupForm.emailaddress.$touched && signupForm.emailaddress.$invalid">
+                                <span ng-show="signupForm.emailaddress.$error.required">Email Address is required.</span>
+                                <span ng-show="signupForm.emailaddress.$error.email">Invalid Email Address.</span>
+                                </span>
+                            </div>
+                        </div>
+                        <p>Please choose a membership type</p>
+                        <div class="text-center">
+                        	<div class="membershipTypeOuter">
+                                <div class="membershipType">
+                                    <input type="radio" value="annual" name="membershipType" ng-model="membershipType" required>
+                                    <span>ANNUAL</span>
+                                    <div class="membershipTypeDetails">
+                                        <div class="memberTitle">ANNUAL</div>
+                                        <div class="memberDesc">For you and your close one</div>
+                                        <div class="memberFee">£400/ Year</div>
+                                        <div class="memberDesc">£200 joining fee. All inclusive of VAT</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="membershipTypeOuter">
+                                <div class="membershipType">
+                                    <input type="radio" value="joint" name="membershipType" ng-model="membershipType" required>
+                                    <span>JOINT<br>MEMBERSHIP</span>
+                                    <div class="membershipTypeDetails">
+                                        <div class="memberTitle">Joint Membership</div>
+                                        <div class="memberDesc">For member and their spouse</div>
+                                        <div class="memberFee">£600/ Year</div>
+                                        <div class="memberDesc">£200 joining fee. All inclusive of VAT</div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="membershipTypeOuter">
+                                <div class="membershipType">
+                                    <input type="radio" value="overseas" name="membershipType" ng-model="membershipType" required>
+                                    <span>Overseas</span>
+                                    <div class="membershipTypeDetails">
+                                        <div class="memberTitle">Overseas</div>
+                                        <div class="memberDesc">For you and your close one</div>
+                                        <div class="memberFee">£200/ Year</div>
+                                        <div class="memberDesc">£200 joining fee. All inclusive of VAT</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="membershipTypeOuter">
+                                <div class="membershipType">
+                                    <input type="radio" value="under" name="membershipType" ng-model="membershipType" required>
+                                    <span>Under 30</span>
+                                    <div class="membershipTypeDetails">
+                                        <div class="memberTitle">Under 30</div>
+                                        <div class="memberDesc">For you and your close one</div>
+                                        <div class="memberFee">£300/ Year</div>
+                                        <div class="memberDesc">No joining fee.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5>All the information will be treated with the strictest confidence.</h5>
+                        <div class="btnWrap text-center">
+                        	<input class="formBtn" type="submit" value="NEXT" ng-click="signupValidate()"  ng-disabled="signupForm.$invalid" >
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- MEMBER ABOUT YOU -->
+                <div class="tabWrap light" id="aboutyouWrap" rel="1">
+                	<div class="tabClose alertMsg" backTab="#aboutyouWrap" oldId="#signupWrap"></div>
+                    <div class="backBtn"  backTab="#aboutyouWrap" oldId="#signupWrap"><span></span></div>
+                    <h2>ABOUT YOU</h2>
+                    <div class="vertical-divider-1"></div>
+                    <form  ng-controller="aboutyouForm" name="aboutyouForm" novalidate >
+                    	<div class="formLableWrap">
+                            <label>Date of birth*</label>
+						</div>                                                            
+                        <div class="formWrap marginTop_15">
+                            <div class="formWrapLeft">
+                            	<div class="dateFormWrap">
+                                    <input type="type" name="date" ng-model="date"   ng-pattern="/^[0-9]+$/" placeholder="DD"  class="txtBox" maxlength="2"  required >
+                                    <span class="errMsg" ng-show="aboutyouForm.date.$touched && aboutyouForm.date.$invalid">
+                                    <span ng-show="aboutyouForm.date.$error.required">Date is required.</span>
+                                    <span ng-show="aboutyouForm.date.$error.pattern">Not a valid Date.</span>
+                             		<span ng-show="aboutyouForm.date.$error.min">Not a valid Date.</span>
+	                                <span ng-show="aboutyouForm.date.$error.max">Not a valid Date.</span>
+                                    </span>
+                                    
+								</div>
+                                <div class="dateFormWrap">
+                                    <input type="type" name="month" ng-model="month"  ng-pattern="/^[0-9]+$/" placeholder="MM" class="txtBox" maxlength="2"  required >
+                                    <span class="errMsg" ng-show="aboutyouForm.month.$touched && aboutyouForm.month.$invalid">
+                                    <span ng-show="aboutyouForm.month.$error.required">Month is required.</span>
+                                    <span ng-show="aboutyouForm.month.$error.pattern">Not a valid Month.</span>
+                             		<span ng-show="aboutyouForm.month.$error.min">Not a valid Month.</span>
+	                                <span ng-show="aboutyouForm.month.$error.max">Not a valid Month.</span>
+                                    </span>
+								</div>
+                                <div class="dateFormWrap">
+                                    <input type="type" name="year" ng-model="year"  ng-pattern="/^[0-9]+$/" placeholder="YYYY" class="txtBox" maxlength="4"  required >
+                                    <span class="errMsg" ng-show="aboutyouForm.year.$touched && aboutyouForm.year.$invalid">
+                                    <span ng-show="aboutyouForm.year.$error.required">Year is required.</span>
+                                    <span ng-show="aboutyouForm.year.$error.pattern">Not a valid Year.</span>
+                             		<span ng-show="aboutyouForm.year.$error.min">Not a valid Year.</span>
+	                                <span ng-show="aboutyouForm.year.$error.max">Not a valid Year.</span>
+                                    </span>
+								</div>
+                            </div>
+                            <div class="formWrapRight">
+                                <input type="text" name="gender" ng-model="gender" placeholder="Gender*" class="txtBox"  required >
+                                <span  class="errMsg" ng-show="aboutyouForm.gender.$touched && aboutyouForm.gender.$invalid">
+                                <span ng-show="aboutyouForm.gender.$error.required">Gender is required.</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="formWrap">
+                            <div class="formWrapLeft">
+                                <input type="text" name="address1" ng-model="address1" placeholder="Address Line 1*" class="txtBox"  required >
+                                <span class="errMsg" ng-show="aboutyouForm.address1.$touched && aboutyouForm.address1.$invalid">
+                                <span ng-show="aboutyouForm.address1.$error.required">Address Line 1 is required.</span>
+                                </span>
+                            </div>
+                            <div class="formWrapRight">
+                                <input type="text" name="address2" ng-model="address2" placeholder="Address Line 2" class="txtBox" >
+                            </div>
+                        </div>
+                        <div class="formWrap">
+                            <div class="formWrapLeft">
+                                <input type="text" name="postcode" ng-model="postcode" placeholder="Postcode*" class="txtBox"  required >
+                                <span class="errMsg" ng-show="aboutyouForm.postcode.$touched && aboutyouForm.postcode.$invalid">
+                                <span ng-show="aboutyouForm.postcode.$error.required">Postcode is required.</span>
+                                </span>
+                            </div>
+                            <div class="formWrapRight">
+                                <input type="text" name="telephone" ng-model="telephone" ng-pattern="/^[0-9]+$/" placeholder="Telephone*" class="txtBox"  required >
+                                <span class="errMsg" ng-show="aboutyouForm.telephone.$touched && aboutyouForm.telephone.$invalid">
+                                <span ng-show="aboutyouForm.telephone.$error.required">Telephone is required.</span>
+                                <span ng-show="aboutyouForm.telephone.$error.pattern">Not a valid Telephone.</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="btnWrap text-center">
+                        	
+                        	<input class="formBtn" type="submit" value="NEXT" ng-click="aboutyouValidate()"  ng-disabled="aboutyouForm.$invalid" >
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- MEMBER YOUR WORK -->
+                <div class="tabWrap light" id="yourworkWrap" rel="2">
+                	<div class="tabClose alertMsg" backTab="#yourworkWrap" oldId="#aboutyouWrap"></div>
+                    <div class="backBtn"  backTab="#yourworkWrap" oldId="#aboutyouWrap"><span></span></div>
+                    <h2>YOUR WORK</h2>
+                    <div class="vertical-divider-1"></div>
+                    <form  ng-controller="yourworkForm" name="yourworkForm" novalidate >
+                        <div class="formWrap">
+                            <div class="formWrapLeft">
+                                <input type="text" name="industry" ng-model="industry" placeholder="Industry*" class="txtBox"  required >
+                                <span class="errMsg" ng-show="yourworkForm.industry.$touched && yourworkForm.industry.$invalid">
+                                <span ng-show="yourworkForm.industry.$error.required">Industry is required.</span>
+                                </span>
+                            </div>
+                            <div class="formWrapRight">
+                                <input type="text" name="company" ng-model="company" placeholder="Company" class="txtBox" >
+                            </div>
+                        </div>
+                        <div class="formWrap">
+                            <div class="formWrapLeft">
+                                <input type="text" name="positionheld" ng-model="positionheld" placeholder="Position held" class="txtBox"   >
+                            </div>
+                            <div class="formWrapRight">
+                                <input type="text" name="workemail" ng-model="workemail" placeholder="Work email" class="txtBox" >
+                            </div>
+                        </div>
+                        <div class="formWrap">
+                            <div class="formWrapLeft">
+                                <input type="text" name="workaddress1" ng-model="workaddress1" placeholder="Work address line 1*" class="txtBox"  required >
+                                <span class="errMsg" ng-show="yourworkForm.workaddress1.$touched && yourworkForm.workaddress1.$invalid">
+                                <span ng-show="yourworkForm.workaddress1.$error.required">Work address line 1 is required.</span>
+                                </span>
+                            </div>
+                            <div class="formWrapRight">
+                                <input type="text" name="workaddress2" ng-model="workaddress2" placeholder="Work address line 2" class="txtBox" >
+                            </div>
+                        </div>
+                        <div class="formWrap">
+                            <div class="formWrapLeft">
+                                <input type="text" name="postcode" ng-model="postcode" placeholder="Postcode*" class="txtBox"  required >
+                                <span class="errMsg" ng-show="yourworkForm.postcode.$touched && yourworkForm.postcode.$invalid">
+                                <span ng-show="yourworkForm.postcode.$error.required">Industry is required.</span>
+                                </span>
+                            </div>
+                            <div class="formWrapRight">
+                                <input type="text" name="worktelephone" ng-model="worktelephone" placeholder="Work telephone*" class="txtBox" ng-pattern="/^[0-9]+$/" required >
+                                <span class="errMsg" ng-show="yourworkForm.worktelephone.$touched && yourworkForm.worktelephone.$invalid">
+                                <span ng-show="yourworkForm.worktelephone.$error.required">Work telephone is required.</span>
+                                <span ng-show="yourworkForm.worktelephone.$error.pattern">Not a  valid Work telephone.</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="formLableWrap">
+                            <label>Tell us why you do what you do*</label>
+						</div>
+                        <div class="formWrap marginTop_15">
+                        	<div class="formWrapFull">
+                                <input type="text" name="tellus" ng-model="tellus" placeholder="I do what i do because..." class="txtBox"  required >
+                                <span class="errMsg" ng-show="yourworkForm.tellus.$touched && yourworkForm.tellus.$invalid">
+                                <span ng-show="yourworkForm.tellus.$error.required">Tell us why you do what you do required.</span>
+                                </span>
+							</div>                                
+                        </div>  
+                        <div class="btnWrap text-center">
+                        	<input class="formBtn" type="submit" value="NEXT" ng-click="yourworkValidate()" ng-disabled="yourworkForm.$invalid" >
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- MEMBER WHY YOU -->
+                <div class="tabWrap light" id="whyyouWrap" rel="3">
+                	<div class="tabClose alertMsg" backTab="#whyyouWrap" oldId="#yourworkWrap"></div>
+                    <div class="backBtn" backTab="#whyyouWrap" oldId="#yourworkWrap"><span></span></div>
+                    <h2>WHY YOU</h2>
+                    <div class="vertical-divider-1"></div>
+                    <form  ng-controller="whyyouForm" name="whyyouForm" novalidate >
+                        <div class="formLableWrap">
+                           	<label>Why would you like to be a member of the Chess Club?</label>
+						</div>
+                        <div class="formWrap marginTop_15">
+                        	<div class="formWrapFull">
+                            	<input type="text" name="wouldlike" ng-model="wouldlike" placeholder="I’d like to be a member because..." class="txtBox"   >
+							</div>                                
+                        </div>
+                        <div class="formLableWrap">
+                           	<label>What other clubs are you a member of?*</label>
+						</div>
+                        <div class="formWrap marginTop_15">
+                        	<div class="formWrapFull">
+                                <input type="text" name="memberof" ng-model="memberof" placeholder="I am a member of..." class="txtBox" required  >
+                                <span class="errMsg" ng-show="whyyouForm.memberof.$touched && whyyouForm.memberof.$invalid">
+                                <span ng-show="whyyouForm.memberof.$error.required">What other clubs are you a member of is required.</span>
+                                </span>
+							</div>                                
+                        </div>  
+                        <div class="btnWrap text-center">
+                        	<input class="formBtn" type="submit" value="NEXT" ng-click="whyyouValidate()" ng-disabled="whyyouForm.$invalid" >
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- MEMBER PROPOSER -->
+                <div class="tabWrap light" id="proposerWrap" rel="4">
+                	<div class="tabClose alertMsg" backTab="#proposerWrap"  oldId="#whyyouWrap"></div>
+                    <div class="backBtn"  backTab="#proposerWrap" oldId="#whyyouWrap"><span></span></div>
+                    <h2>PROPOSER</h2>
+                    <div class="vertical-divider-1"></div>
+                    <form  ng-controller="proposerForm" name="proposerForm" novalidate >
+                        <div class="formWrap">
+                            <div class="formWrapLeft">
+                                <input type="text" name="proposer1" ng-model="proposer1" placeholder="Name of proposer 1" class="txtBox" >
+                            </div>
+                            <div class="formWrapRight">
+                                <input type="text" name="proposeremil1" ng-model="proposeremil1" placeholder="Proposer email" class="txtBox" >
+                            </div>
+                        </div>
+                        <div class="formWrap">
+                            <div class="formWrapLeft">
+                                <input type="text" name="proposer2" ng-model="proposer2" placeholder="Name of proposer 2" class="txtBox"  >
+                            </div>
+                            <div class="formWrapRight">
+                                <input type="text" name="proposeremil2" ng-model="proposeremil2" placeholder="Proposer email" class="txtBox" >
+                            </div>
+                        </div>
+                        <div class="formWrap text-center">
+                        	<p><span class="checkBoxWrap"><input type="checkbox" name="proposerdont" ng-model="proposerdont" id="proposerdont"></span> I don’t have a proposer</p>
+                        </div>  
+                        <div class="btnWrap text-center">
+                        	<input class="formBtn" type="submit" value="NEXT" ng-click="proposerValidate()" ng-disabled="proposerForm.$invalid">
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- MEMBER PAYMENT -->
+                <div class="tabWrap light" id="paymentWrap"  rel="5">
+                	<div class="tabClose alertMsg" backTab="#paymentWrap" oldId="#proposerWrap"></div>
+                    <div class="backBtn"  backTab="#paymentWrap" oldId="#proposerWrap"><span></span></div>
+                    <h2>PAYMENT</h2>
+                    <div class="vertical-divider-1"></div>
+                    <p>No payments will be taken out until your application is successful</p>
+                    <p>Your membership</p>
+                    <form  ng-controller="paymentForm" name="paymentForm" novalidate >
+                        <div class="selectetmembershipType" id="selectetmembershipType">
+                            <div class="memberTitle">Joint Membership</div>
+                            <div class="memberDesc">For you and your close one</div>
+                            <div class="memberFee">£600/ Year</div>
+                            <div class="memberDesc">£200 joining fee. All inclusive of VAT</div>
+                        </div>
+                        <div class="formWrap margin_0_auto height_auto">
+                        	<p>Applicants who are not immediately accepted will, at the discretion of the Chess Club, be placed on a waiting list. The waiting list has no definitive period.</p>
+                        </div>
+                        <div class="termsWrap">
+                        	<p><span class="checkBoxWrap small"><input type="checkbox" name="terms" ng-model="terms" id="proposerdont" required></span> I agree to the <a class="nextPageBtn" href="#termsWrap">Terms of Service</a> and <a class="nextPageBtn" href="#privacyWrap">Privacy Policy</a></p>
+                            <p><span class="checkBoxWrap small"><input type="checkbox" name="rules" ng-model="rules" id="proposerdont" required></span> I have read and accepted the <a class="nextPageBtn" href="#rulesWrap">Rules of the club</a></p>
+                            <p><span class="checkBoxWrap small"><input type="checkbox" name="promotional" ng-model="promotional" id="proposerdont"></span> I agree to receive online promotional offers from the club.</p>
+                        </div>  
+                        <div class="btnWrap text-center">
+                        	<input class="formBtn" type="submit" value="MAKE PAYMENT" ng-click="paymentValidate()" ng-disabled="paymentForm.$invalid">
+                        </div>
+                    </form>
+                </div>
+                
+                
+                
+                <!-- PAYMENT CONFIRMATION -->
+                <div class="tabWrap light" id="confirmationWrap">
+                	<!--<div class="tabClose" backTab="#confirmationtWrap"></div>-->
+                    <h2>CONFIRMATION</h2>
+                    <div class="vertical-divider-1"></div>
+                    <div class="confirmationInnerWrap">
+                    	<h5>Thank you for choosing to become a member with the Chess Club</h5>
+                        <h5>Your payment details have been confirmed.<br>We will email you once your application is successful.</h5>
+                    </div>
+                    <div class="btnWrap text-center">
+                        	<input class="formBtn okBtn" type="button" value="OK" >
+                    </div>
+                </div>
+                
+                <!-- PAYMENT ERROR -->
+                <div class="tabWrap light" id="paymetErrorWrap">
+                	<!--<div class="tabClose" backTab="#confirmationtWrap"></div>-->
+                    <h2>PAYMENT ERROR</h2>
+                    <div class="vertical-divider-1"></div>
+                    <div class="temsInnerWrap">
+                    	<h5>Your payment could not be processed at this time.<br>Please try again later or contact the club <a href="tel:020 7170 9138">020 7170 9138</a></h5>
+                        <h5><br><br></h5>
+                    </div>
+                    <div class="btnWrap text-center">
+	                    <input class="formBtn okBtn" type="button" value="OK" >
+                    </div>
+                </div>
+                
+                
+                <!-- TOP MESSAGE -->
+                <div class="saveMsg">Your application will be autosaved. We have sent a link to your email.<!--<div class="saveMsgClose" ></div>--></div>
+                
+                <!-- CONTINUE MSG POPUP -->
+                <div class="continueMsgPopup">
+                	<div class="continueMsg">
+                        <p>Are you sure you want to leave the application process?</p>
+                        <div class="btnWrap"><input type="button" class="formBtn continueLink" value="CONTINUE"></div>
+                        <span class="leaveLink">Leave</span>
+                    </div>
+                </div>
+			</div>
+           
+			<ul class="tabBreadcrumb">
+                <li class="active">SIGN UP</li>
+                <li>ABOUT YOU</li>
+                <li>YOUR WORK</li>
+                <li>WHY YOU</li>
+                <li>PROPOSER</li>
+                <li>PAYMENT</li>
+            </ul>
+            
+             <!-- TERMS AND SERVICE -->
+            <div class="pageWrap" id="termsWrap">
+				<div class="pageWrapLogo">
+                	<img src="assets/img/ChessClub_Logo_w_address.svg" alt="" class="">
+				</div>               	             
+                <div class="temsInnerWrap">
+					<div class="pageClose" pageId="#termsWrap"></div>
+                    <h2>TERMS OF SERVICE</h2>
+                    <div class="vertical-divider-1"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                </div>
+                
+            </div>
+            
+            <!-- PRIVACY POLICY -->
+            <div class="pageWrap" id="privacyWrap">
+                <div class="pageWrapLogo">
+                	<img src="assets/img/ChessClub_Logo_w_address.svg" alt="" class="">
+				</div>
+                <div class="temsInnerWrap">
+                	<div class="pageClose" pageId="#privacyWrap"></div>
+                	<h2>PRIVACY POLICY</h2>
+	                <div class="vertical-divider-1"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                </div>
+                
+            </div>
+            
+            <!-- RULES OF THE CLUB -->
+            <div class="pageWrap" id="rulesWrap">
+            	<div class="pageWrapLogo">
+                	<img src="assets/img/ChessClub_Logo_w_address.svg" alt="" class="">
+				</div>
+                <div class="temsInnerWrap">
+                	<div class="pageClose" pageId="#rulesWrap"></div>
+                    <h2>RULES OF THE CLUB</h2>
+                    <div class="vertical-divider-1"></div>
+                    <h3>THE CLUB</h3>
+                    <p>The name of the club is Chess Club ('the Club').</p>
+                    <p>The Club is a proprietary private membership restaurant, bar and club, owned and operated by XXX Ltd, ADDRESS. Registered Company Number: XXX. The Proprietor reserves the right to charge members a joining fee and an annual subscription fee. The right to amend or waive any such fees or subscriptions shall be in the Proprietor’s sole discretion.</p>
+                    <h3>OBJECTIVE</h3>
+                    <p>The objective of the Club is to provide food, beverage and recreational facilities for its members and members’ guests.</p>
+                    <h3>MEMBERSHIP COMMITTEE</h3>
+                    <p>The Membership Committee is appointed by the Proprietor. The Membership Committee has the right to refuse any application for membership without giving reason. The Membership Committee will not enter into any correspondence in relation to fees.</p>
+                    <h3>MEMBERSHIP</h3> 
+                    <p>Membership is open to people over 18 years of age on a non-discriminatory basis. The applicant will submit an application form online. Every candidate must be proposed by a member and seconded by another member; the proposing member will be asked to vouch for the candidate from their personal knowledge via an e-mail of written support. Membership is non transferable.  Any inaccuracy in or omission from an application may render it void at the discretion of the Membership Committee.</p>
+                    <h3>JOINT MEMBERSHIP</h3>
+                    <p>Joint Membership is available to married couples and those in civil partnerships. If the couple ceases to be married or their civil partnership ends then each member will be charged for memberships fees at the full individual rate the following year. Joint members are jointly liable for membership fees and charges for food and beverages purchased at the Club.</p>
+                    <h3>OVERSEAS MEMBERSHIP</h3>
+                    <p>Overseas Membership is available to people who spend more than nine months per year abroad with their primary address overseas.</p>
+                    <h3>UNDER 30 MEMBERSHIP</h3>
+                    <p>Under 30 Membership is available to successful applicants aged between 18 and 30 years old. After your 30th birthday, annual membership fees will be adjusted. </p>
+                    <h3>FEES</h3>
+                    <p>The annual subscription fee and the joining fee are determined by the Proprietor. Upon approval of your membership, your membership fees are payable immediately. By providing us with your credit card details and/or bank details for Direct Debit, you accept and consent to being charged with membership fees upon your application being approved or renewed. Cheques are not accepted as payment for fees.</p>
+                    <p>Membership is for a minimum of one year and renewable thereafter on an annual basis. If you have selected monthly payment and choose to resign your membership or your membership is cancelled part way through the year, it is at the discretion of the management whether you have to pay for the remainder of the year. </p>
+                    <p>All membership fees are to be paid to Chess Club and never to any other party. </p>
+                    <p>Failure to pay the annual subscription within one month of the due date after being notified by management will result in membership being terminated.</p>
+                    <h3>PROPOSING NEW MEMBERS</h3>
+                    <p>We invite current members to propose new applicants to join the Club. The application form is available online at chessclublondon.com. The Membership Committee meets biannually and admits new members as space becomes available. A valid form of identification is required to verify eligibility for membership.</p>
+                    <p>The Club shall use all reasonable endeavors to ensure that no applicant, member or guest receives less favourable treatment on the grounds of their sex, race, religion or belief, disability, marital status, age, religion, sexual orientation, nationality, colour or ethnic origin.</p>
+                    <h3>MEMBERSHIP CARDS</h3>
+                    <p>Membership Cards must be presented to the Reception on entry. Any member who allows his or her card to be used by a non-member will have their membership terminated.</p>
+                    <h3>GUESTS</h3>
+                    <p>Members are permitted up to four guests. A member’s guests may not enter the club without the member present. Members must not sit separately to their guests or allow their guests to remain in the Club when they leave. Members are responsible for ensuring their guests follow all club rules and policies, and can face suspension or termination of membership if their guests violate those rules. The guest of a member must sign and write his/her name in the book supplied for that purpose. Former members who have been expelled and members who are under suspension may not be admitted as guests to the Club.</p>
+                    <h3>BOOKINGS/RESERVATIONS</h3>
+                    <p>Reservations can be made by telephone or e-mail but must be cancelled or amended by telephone. Failure to fulfill a reservation may result in a cancellation fee determined by the Proprietor.</p>
+                    <h3>ANIMALS</h3>
+                    <p>We welcome dogs in the Club if they are house trained and well behaved. Please be considerate of other members if you bring a dog to the Club and keep it under your supervision at all times.</p>
+                    <h3>CHILDREN</h3>
+                    <p>We welcome children in the Club if they are house trained and well behaved. Please be considerate of other members when you bring children to the Club and keep them under your supervision at all times.</p>
+                    <h3>ATTIRE</h3>
+                    <p>There is no dress code at Chess Club however, members and your guests are asked to maintain an acceptable standard of dress.</p>
+                    <h3>MOBILE PHONES/LAPTOPS</h3>
+                    <p>Mobile phones and laptops are allowed throughout the Club; however, please be considerate of other members when using them. Films, videos and music should only be played through headphones and must not be audible to other members.</p>
+                    <h3>STAFF</h3>
+                    <p>The appointment and dismissal of all employees is at the sole discretion of the Proprietor.<br>Members and their guests are expected to conduct themselves in a courteous manner with the Club’s employees.</p>
+                    <h3>PRIVATE PARTIES</h3>
+                    <p>We may occasionally close the Club to members for private events. Please contact XXX if you are interested in hiring any of the spaces.</p>
+                    <h3>CAMERAS AND RECORDING DEVICES</h3>
+                    <p>No cameras, video or recording devices may be used while in the Club. The Club reserves the right to confiscate recording devices and any photos, videos or other recorded images used or taken while on Club premises.</p>
+                    <h3>PRIVACY FOR MEMBERS/GUESTS</h3>
+                    <p>Members and their guests must not approach or solicit other people in the Club who they do not know personally. Doing so may lead to expulsion from the Club.</p>
+                    <h3>PRESS/SOCIAL MEDIA</h3>
+                    <p>The Club is a strictly press and social media free zone. Members will be expelled from the Club, and potentially have their membership suspended or terminated, if they or their guests communicate information to the press or on social media regarding other members, guests, or Club affairs.</p>
+                    <h3>CONFIDENTIALITY</h3>
+                    <p>The Club guarantees full confidentiality regarding the records and personal information of its members, except in cases of legitimate police inquiry.</p>
+                    <h3>BILLS AND CREDIT</h3>
+                    <p>There are credit facilities available at Chess Club – member’s who have given a direct debit instruction to the Club may choose to make a payment for food and drink this way although the Club reserves the right to ask for bills to be settled immediately. The direct debit will be drawn shortly after the charges are incurred. The Club may limit the sizes of these charges. Members are responsible for any unpaid bills of their guests.</p>
+                    <h3>MEMBERSHIP RENEWAL</h3>
+                    <p>Membership renewals are not automatic, but reviewed annually by Membership Committee. The decision on renewal is final and cannot be appealed.</p>
+                    <h3>RESIGNATION</h3>
+                    <p>Members may resign their membership at any time. Refund of any unredeemed portion of the annual membership fee is at the discretion of the management.</p>
+                    <h3>EXPULSION OF A MEMBER</h3>
+                    <p>The following list of behaviours will result in the immediate expulsion from Club premises of those responsible, along with any accompanying members or guests, and may result in suspension or termination of membership:</p>
+                    <ul class="list-group">
+                        <li>Any form of discrimination, harassment or bullying towards any other member, guest or employee of the Club</li>
+                        <li>Violent, abusive or intimidating behaviour</li>
+                        <li>Serious insubordination and misconduct under the influence of alcohol</li>
+                        <li>Deliberate removal, damage or destruction of property belonging to the Club, its members or its guests</li>
+                        <li>Any disclosure to the press or social media	of information regarding other members, guests or Club affairs</li>
+                        <li>Betting or gambling for money in the Club</li>
+                        <li>Ingesting, possessing or distributing illegal drugs on Club premises</li>
+                        <li>Any conduct likely to endanger the Club’s Premises License</li>
+                        <li>Any conduct, either inside or outside the house, likely to damage the Club’s reputation</li>
+                    </ul>                            
+                    <p>When a member who has been expelled is allowed to return to Club premises is at the discretion of the management.</p>
+                    <h3>TERMINATION OF MEMBERSHIP</h3>
+                    <p>Termination of membership is ultimately at the discretion of the management. The decision is final and cannot be appealed.</p>
+                    <p>Those who have had their membership terminated will not be refunded the unredeemed portion of their annual membership fee and cannot return to the Club as a guest in future.</p>
+                    <h3>RIGHTS AND PRIVILEGES OF MEMBERSHIP</h3>
+                    <p>All members are entitled to the full rights and privileges of the Club, but have no proprietary rights with regard to Club premises or anything found therein. </p>
+                    <h3>DISSOLUTION</h3>
+                    <p>The Club may be dissolved by the Proprietor at any time.</p>
+                    <h3>SMOKING</h3>
+                    <p>No smoking is allowed inside the Club at any time. All members and their guests are obligated to abide by all applicable no-smoking governmental laws.</p>
+                    <h3>CODE OF CONDUCT AND LICENSING CONDITIONS</h3>
+                    <p>Members and their guests are asked to be mindful of the residents on Chesterfield Street and to enter and leave the Club quietly. Disturbances by members or their guests on the street may result in termination of membership.<br>Sale or supply of alcohol in the Club is permitted within the hours and conditions permitted under the Premises License in respect of the Club premises.</p>
+                    <h3>LIABILITY OF THE PROPRIETOR</h3>
+                    <p>All property brought into the Club by any member or their guest shall be at their sole risk and neither the Proprietor nor any employee of the Club shall be liable for any loss or damage to any such property.<br>The Proprietor, its employees, and agents shall not be liable to any member or guest of a member for any injury suffered by them or their property. However, nothing in these Rules and Regulations shall be deemed to exclude the Club’s liability for death and/or personal injury arising out of any negligent or unlawful act by the Club.</p>
+                    <h3>DISPUTE OF THE RULES</h3>
+                    <p>In the event of any dispute arising as to the meaning or interpretation of these rules, the matter shall be referred to the Membership Committee, whose decision shall be final.<br>These rules shall be governed and construed in accordance with English law and you agree to submit to the exclusive jurisdiction of the courts of England.</p>
+                    <h3>NOTICES</h3>
+                    <p>The Proprietor may alter or revoke the rules of the Club at any time. Such alterations shall be deemed to have been brought to the notice of members provided that a copy is conspicuously displayed on the Club’s official website www.chessclublondon.com</p>
+                    <h3>XXX CLUB TRADEMARK RIGHTS</h3>
+                    <p>All members and their guests shall not use the names, logos, colours, trade marks, service marks, photographs, trade dress, or other identifying features of XXX Club (the “XXX Club Marks”) without obtaining the specific prior written approval of the Proprietor as to the specific use. You hereby expressly recognise that the XXXX Club Marks are the valid, unique and exclusive property of XXXX Club, its parent, affiliates and/or subsidiaries. Members and their guests may not produce or create, or authorise others to produce or create, the XXXX Club Marks for any purpose whatsoever, including, but not limited to, in any communications, marketing, advertising or other promotional materials (including, but not limited to, brochures, flyers, invitations, e-mail messages, etc.) that utilize the XXX Club Marks without the Proprietor’s prior written consent.</p>
+                    <h3>CCTV</h3>
+                    <p>XXX Club employs the use of CCTV cameras and operates them within a strict Code of Practice.  All CCTV Operators are thoroughly trained to operate within this Code of Practice and all relevant legislation. The system has also been fitted with ‘privacy zones’ to ensure that private areas cannot be looked into.  The system has been registered under the Data Protection Act 1998 and operates within the guidelines laid down by the Information Commissioner.  The system is operated in accordance with the Human Rights Act 1998, the Regulation of Investigatory Powers Act 2000 and the Freedom of Information Act 2000.  Images recorded by the CCTV cameras are retained for 31 days and are then wiped unless required for an ongoing investigation by an enforcement agency. No images are provided for commercial, entertainment or any other purposes.</p>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+    	<div class="desktop">
+            <div class="footerSection">
+                <a href="tel:020 7170 9138">020 7170 9138</a> | <a href="mailto:hello@chessclub.com">hello@chessclub.com</a>
+            </div>
+            <div class="footerSection">
+                1 Chesterfield Street, Mayfair W1J London
+            </div>
+            <div class="footerSection">
+                <a class="nextPageBtn" href="#rulesWrap">Club Rules</a> | <a class="nextPageBtn" href="#privacyWrap">Privacy Policy</a> | <a class="nextPageBtn" href="#termsWrap">Terms of Service</a>
+            </div>
+		</div>
+        <div class="footerSection mobile">
+            <p>1 Chesterfield Street,<br>Mayfair W1J London</p>
+            <p><a href="tel:020 7170 9138">020 7170 9138</a><br><a href="mailto:hello@chessclub.com">hello@chessclub.com</a></p>
+            <div class="vertical-divider-1"></div>
+            <p><a class="nextPageBtn" href="#rulesWrap">Club Rules</a><br><a class="nextPageBtn" href="#privacyWrap">Privacy Policy</a><br><a class="nextPageBtn" href="#termsWrap">Terms of Service</a></p>
+        </div>
+    </footer>
+    <!-- /Page Content -->
+	<div class="pageMask"></div>
+    <div class="pageLoader"><div class="cssload-loader"></div></div>
+    
+				
+		<script src="bundle.js"></script>
+</body>
+
+</html>
